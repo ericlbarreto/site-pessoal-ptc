@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #0d1116;
+}
+
+header {
+    background-image: linear-gradient(to right, #8a2eed, #ec8af1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 80px;
+}
+
+header img {
+    width: 10%;
+    height: 10%;
+}
+
+header nav a {
+    transition: .3s;
+    color: white;
+    font-weight: 600;
+    padding: 16px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    font-size: 18px;
+    transition: .3s;
+}
+
+#inicio {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 100px 80px;
+    position: relative;
+    justify-content: center;
+}
+
+#inicio .foto {
+    width: 35%;
+    height: 35%;
+    border-radius: 1000px
+}
+
+h1, h2 {
+    margin-bottom: 16px;
+    font-size: 32px;
+}
+
+.paragrafo {
+    line-height: 150%;
+    margin-bottom: 32px;
+    max-width: 600px;
+}
+
+.button {
+    background-color: #8a2eed;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 16px 32px;
+    border-radius: 32px;
+}
+
+.button:hover {
+    transition: .3s;
+    background-color: #ec8af1;
+}
+
+.transparent-button {
+    margin: 32px;
+    font-weight: 600;
+    background-color: none;
+    color: #ec8af1;
+    text-decoration: none;
+    border: #ec8af1 solid 2px;
+    padding: 12px 24px;
+    border-radius: 36px;
+}
+
+.transparent-button:hover {
+    background-color: none;
+    color: #ffffff;
+    border: #ffffff solid 2px;
+    transition: .3s;
+}
+
+#apresentacao {
+    background-color: #0d1116;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+    color: white;
+    padding: 100px 80px;
+}
+
+#apresentacao h2 {
+    color: #ec8af1;
+}
+
+#apresentacao img {
+    width: 45%;
+    height: 45%;
+}
+
+#portfolio {
+    background-color: #0d1116;
+    justify-content: center;
+    padding: 100px 80px;
+    display: block;
+    text-align: center;
+}
+
+#portfolio h2 {
+    color: #ec8af1;
+    margin-bottom: 52px;
+}
+
+#portfolio p {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 52px;
+}
+
+#hobbies {
+    background-color: white;
+    display: flex;
+    gap: 64px;
+    padding: 100px 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+#hobbies img {
+    width: 45%;
+}
+
+.duvida {
+    position: relative;
+}
+
+.duvida h3 {
+    
+    border: 2px solid #8a2eed;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 24px;
+}
+
+.duvida img {
+    transition: .2s;
+    position: absolute;
+    top: 32px;
+    right: -90px;
+    width: 20%;
+    height: 20%;
+}
+
+.duvida .paragrafo {
+    border-right: 1px solid #8a2eed;
+    border-bottom: 1px solid #8a2eed;
+    border-left: 1px solid #8a2eed;
+    border-radius: 0 0 8px 8px;
+    margin-top: -8px;
+    padding: 0 24px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.duvida.ativa .paragrafo {
+    transition: .2s;
+    height: fit-content;
+    opacity: 1;
+    padding: 24px;
+}
+
+
+#footer {
+    background-color: #0d1116;
+    color: #ffffff;
+    text-align: center;
+    padding: 24px;
+    font-weight: 600;
+
+}
+
+#footer a {
+    color: #ec8af1;
+}
